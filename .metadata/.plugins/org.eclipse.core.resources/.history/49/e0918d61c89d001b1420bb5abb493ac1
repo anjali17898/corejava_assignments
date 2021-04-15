@@ -1,0 +1,23 @@
+import com.nt.model;
+public class Customer extends Address{
+	private String customerName;
+	private String cityType;
+
+	public Customer(String customerName) {
+		super();
+		this.customerName = customerName;
+	}
+
+	public String getCustomerName() {
+		return customerName;
+	}
+
+	public void setCustomerName(String customerName) {
+		this.customerName = customerName;
+	}
+	
+	public void getCustomerDetails() {
+		System.out.println("Name: "+customerName+"\nResidential Address: "+cityType);
+	}
+
+}
